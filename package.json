@@ -1,7 +1,17 @@
 {
-  "name": "practice",
+  "name": "expo-custom-navigation",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "description": "custom navigation for your expo project",
+  "main": "index.js",
+  "keywords": [
+    "custom-navigations",
+    "expo-navigation",
+    "react-navigationn",
+    "custom-drawer",
+    "custom-tabs"
+  ],
+  "author": "Nikhil <nikhilbarot1602@gmail.com> (https://nikhil-portfolio-website.herokuapp.com/)",
+  "license": "ISC",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -9,12 +19,27 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
+    "@react-navigation/bottom-tabs": "^6.3.3",
+    "@react-navigation/drawer": "^6.4.4",
+    "@react-navigation/material-bottom-tabs": "^6.2.3",
+    "@react-navigation/material-top-tabs": "^6.2.4",
+    "@react-navigation/native": "^6.0.12",
+    "@react-navigation/native-stack": "^6.8.0",
+    "@react-navigation/stack": "^6.2.3",
     "expo": "~46.0.9",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.4",
-    "react-native-web": "~0.18.7"
+    "react-native-gesture-handler": "^2.5.0",
+    "react-native-paper": "^5.0.0-rc.4",
+    "react-native-reanimated": "^2.10.0",
+    "react-native-safe-area-context": "4.3.1",
+    "react-native-screens": "~3.15.0",
+    "react-native-tab-view": "^3.1.1",
+    "react-native-web": "~0.18.7",
+    "react-native-pager-view": "5.4.24"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -22,5 +47,5 @@
     "@types/react-native": "~0.69.1",
     "typescript": "~4.3.5"
   },
-  "private": true
+  "private": false
 }

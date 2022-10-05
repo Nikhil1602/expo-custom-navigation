@@ -1,6 +1,6 @@
 {
   "name": "expo-custom-navigation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "custom navigation for your expo project",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

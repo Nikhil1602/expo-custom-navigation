@@ -62,11 +62,11 @@ const App:React.FC = () => {
       
       // <BottomTabs isNested={false} items={items} headerStyle={{backgroundColor: 'red', color: 'white', textAlign: 'center'}} itemStyle={{activeColor: 'red', color: 'black', marginBottom: 4}} style={{margin: 10, borderRadius: 50, elevation: 10, padding: 5}}  />
 
-      <TopTabs isNested={false} items={items} indicatorStyle={{backgroundColor: 'red'}} style={{marginTop: 50}}  />
+      // <TopTabs isNested={false} items={items} indicatorStyle={{backgroundColor: 'red'}} style={{marginTop: 50}}  />
       
       // <Stack isNested={false} items={items} headerStyle={{backgroundColor: 'red', color: 'white', fontWeight: 'bold', textAlign: 'center'}} presentation="modal" />
       
-      // <Drawer items={items} headerStyle={style}  />
+      <Drawer items={items} headerStyle={style}   />
   );
 }
 

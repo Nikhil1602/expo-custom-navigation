@@ -2,7 +2,11 @@
   "name": "expo-custom-navigation",
   "version": "1.0.0",
   "description": "custom navigation for your expo project",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "keywords": [
     "custom-navigations",
     "expo-navigation",
@@ -13,6 +17,8 @@
   "author": "Nikhil <nikhilbarot1602@gmail.com> (https://nikhil-portfolio-website.herokuapp.com/)",
   "license": "ISC",
   "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",

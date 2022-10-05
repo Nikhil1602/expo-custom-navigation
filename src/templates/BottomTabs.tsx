@@ -7,7 +7,7 @@ import React from 'react';
 
 const BottomTabNav = createBottomTabNavigator();
 
-const BottomTabs: React.FC<BottomTabsProps> = (props) => {
+const BottomTabs: React.FC<BottomTabsProps> = (props: BottomTabsProps) => {
 
     const {isNested, navigationRef, items, header, headerStyle, 
         style, itemStyle, labelPosition, showLabel, labelStyle, 

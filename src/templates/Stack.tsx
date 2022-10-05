@@ -8,7 +8,7 @@ import { StackProps } from '../utils/constants';
 
 const StackNav = createStackNavigator();
 
-const Stack: React.FC<StackProps> = (props) => {
+const Stack: React.FC<StackProps> = (props: StackProps) => {
 
   const {headerStyle, mode, navigationRef, presentation, header, isNested, items, gestureDirection, gestureEnabled} = props;
 

@@ -21,7 +21,7 @@ const CustomDrawer = (prop: any) => {
     )
 }
 
-const Drawer: React.FC<DrawerProps> = (props) => {
+const Drawer: React.FC<DrawerProps> = (props: DrawerProps) => {
   
   const {navigationRef, children, style, items, isNested, headerStyle = defaultHeaderProps, type = 'front', position = 'left', header, itemStyle} = props;
   const showLHeader: boolean = position === 'left' ? true : false;

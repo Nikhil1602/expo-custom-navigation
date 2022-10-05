@@ -45,20 +45,20 @@ const App:React.FC = () => {
  const {ref, navigate} = useNavigation();
 
   return (
-      // <Drawer items={items} navigationRef={ref} isNested={false}>
-      //   <View style={{height: 200, backgroundColor: 'lightgreen'}}>
-      //     <View style={{width: 100, backgroundColor: 'white', height: 100, marginTop: 40, marginLeft: 80, borderRadius: 100}}></View>
-      //   </View>
-      //   <Pressable style={{borderWidth: 1, borderRadius: 10, padding: 20, margin: 10}} onPress={() => navigate('About')}>
-      //     <Text>About</Text>
-      //   </Pressable>
-      //   <Pressable style={{borderWidth: 1, borderRadius: 10, padding: 20, margin: 10}} onPress={() => navigate('Contact')}>
-      //     <Text>Contact</Text>
-      //   </Pressable>
-      //   <Pressable style={{borderWidth: 1, borderRadius: 10, padding: 20, margin: 10}} onPress={() => navigate('Home')}>
-      //     <Text>Home</Text>
-      //   </Pressable>
-      // </Drawer>
+      <Drawer items={items} navigationRef={ref} isNested={false}>
+        <View style={{height: 200, backgroundColor: 'lightgreen'}}>
+          <View style={{width: 100, backgroundColor: 'white', height: 100, marginTop: 40, marginLeft: 80, borderRadius: 100}}></View>
+        </View>
+        <Pressable style={{borderWidth: 1, borderRadius: 10, padding: 20, margin: 10}} onPress={() => navigate('About')}>
+          <Text>About</Text>
+        </Pressable>
+        <Pressable style={{borderWidth: 1, borderRadius: 10, padding: 20, margin: 10}} onPress={() => navigate('Contact')}>
+          <Text>Contact</Text>
+        </Pressable>
+        <Pressable style={{borderWidth: 1, borderRadius: 10, padding: 20, margin: 10}} onPress={() => navigate('Home')}>
+          <Text>Home</Text>
+        </Pressable>
+      </Drawer>
       
       // <BottomTabs isNested={false} items={items} headerStyle={{backgroundColor: 'red', color: 'white', textAlign: 'center'}} itemStyle={{activeColor: 'red', color: 'black', marginBottom: 4}} style={{margin: 10, borderRadius: 50, elevation: 10, padding: 5}}  />
 
@@ -66,7 +66,7 @@ const App:React.FC = () => {
       
       // <Stack isNested={false} items={items} headerStyle={{backgroundColor: 'red', color: 'white', fontWeight: 'bold', textAlign: 'center'}} presentation="modal" />
       
-      <Drawer items={items} headerStyle={style}   />
+      // <Drawer items={items} headerStyle={style}   />
   );
 }
 

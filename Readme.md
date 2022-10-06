@@ -102,7 +102,7 @@ When you import any of above component, use `ctrl + space` to list all the avail
 
 - `customTabs`: `(() => <View></View>)`
 - `lazy`: boolean
-- ``swipeEnabled```: boolean,
+- `swipeEnabled`: boolean,
 - `activeColor`: string,
 - `inactiveColor`: string,
 - `contentStyle`: ViewStyle,
@@ -132,6 +132,8 @@ When you import any of above component, use `ctrl + space` to list all the avail
 
 ```bash
     import { Drawer, useNavigation } from 'expo-custom-navigation';
+    import { Pressable, Text } from 'react-native';
+    import { Home, About, Contact } from './screen';
 
     const App = () => {
 
@@ -157,15 +159,15 @@ When you import any of above component, use `ctrl + space` to list all the avail
 
         return (
             <Drawer items={items} navigationRef={ref} isNested={false}>
-                <View>
+                <Pressable onPress={() => navigate('Home')}>
                     <Text>Home</Text>
-                </View>
-                <View>
+                </Pressable>
+                <Pressable onPress={() => navigate('About')}>
                     <Text>About</Text>
-                </View>
-                <View>
+                </Pressable>
+                <Pressable onPress={() => navigate('Contact')}>
                     <Text>Contact</Text>
-                </View>
+                </Pressable>
             </Drawer>
         )
     }
